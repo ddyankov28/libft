@@ -3,12 +3,13 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/09 13:14:30 by ddyankov          #+#    #+#              #
-#    Updated: 2022/10/30 14:12:51 by ddyankov         ###   ########.fr        #
+#    Updated: 2023/04/17 22:56:16 by ddyankov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 NAME = libft.a
 
 SOURCES = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \

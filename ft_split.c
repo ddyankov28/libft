@@ -3,31 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 12:06:38 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/10/23 12:44:23 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/04/17 22:45:55 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	countstrings(char const *s, char c)
 {
-	int	result;
-	int	counter;
+	int	res;
+	int	i;
 
-	result = 0;
-	counter = 0;
-	while (s[counter])
+	res = 0;
+	i = 0;
+	while (s[i])
 	{
-		while (s[counter] == c)
-			counter++;
-		if (s[counter] != '\0')
-			result++;
-		while (s[counter] && s[counter] != c)
-			counter++;
+		while (s[i] == c)
+			i++;
+		if (s[i] != '\0')
+			res++;
+		while (s[i] && s[i] != c)
+			i++;
 	}
-	return (result);
+	return (res);
 }
 
 static char	*cut_part(const char *s, int start, int end)
